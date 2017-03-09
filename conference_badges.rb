@@ -16,3 +16,5 @@ def printer(a)
      puts assign
   end
 end
+
+# puts batch_badge_creator(a).zip(assign_rooms(a)) should also work, though makes a slightly different array
