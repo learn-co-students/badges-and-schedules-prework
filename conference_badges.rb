@@ -21,7 +21,5 @@ def printer(attendees)
   batch.each do |name|
     puts name
   end
-  rooms.each do |room|
-    puts room
-  end
+  rooms.each {|room| puts room} # Another way to use #each do iterator
 end
