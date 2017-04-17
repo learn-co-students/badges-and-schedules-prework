@@ -3,18 +3,14 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  badges = []
-  names.map {|x| badges.push("Hello, my name is #{x}.")}
-  badges
+  names.map {|x| "Hello, my name is #{x}."}
 end
 
 def assign_rooms(names)
-  room_assignments = []
-  names.each.with_index {|n, i| room_assignments.push("Hello, #{n}! You'll be assigned to room #{i + 1}!")}
-  room_assignments
+  names.map.with_index {|n, i| "Hello, #{n}! You'll be assigned to room #{i + 1}!"}
 end
 
 def printer(names)
-  badges.each {|x| puts x}
-  room_assignments.each {|x| puts x}
+  batch_badge_creator(names).each {|x| puts x}
+  assign_rooms(names).each {|x| puts x}
 end
