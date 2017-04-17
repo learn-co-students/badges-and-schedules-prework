@@ -15,10 +15,6 @@ def assign_rooms(names)
 end
 
 def printer(names)
-  x = 0
-  while x < names.length
-    puts badges[x]
-    puts room_assignments[x]
-    x += 1
-  end
+  badges.each {|x| puts x}
+  room_assignments.each {|x| puts x}
 end
