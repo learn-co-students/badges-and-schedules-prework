@@ -17,8 +17,8 @@ def assign_rooms(attendees)
 end
 
 	def printer(attendees)
-		attendees.map do |x| 
-			puts badge_maker(x)
-			puts assign_rooms([x])
+		attendees.each_with_index do |attendee, idx|
+			puts badge_maker(attendee)
+			puts assign_rooms(attendees)[idx]
 		end
 	end
