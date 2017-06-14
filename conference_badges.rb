@@ -3,21 +3,19 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(arrayNames)
-  badgeMessages = []
-  arrayNames.each do |name|
-    badgeMessages.push("Hello, my name is #{name}.")
-  end
-  return badgeMessages
+badge_message_array = []
+arrayNames.each do |name|
+  badge_message_array.push("Hello, my name is #{name}.")
+end
+return badge_message_array
 end
 
 def assign_rooms(arrayNames)
-  roomAssignment = []
-  n = 1
-  arrayNames.each_with_index do |name, index|
-    roomAssignment.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")
-    n += 1
-  end
-  roomAssignment
+room_assignment = []
+arrayNames.each_with_index do |name, index|
+  room_assignment.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")
+end
+  room_assignment
 end
 
 def printer(arrayNames)
