@@ -1,33 +1,55 @@
 def badge_maker(name)
-    "Hello, my name is #{name}."
+
+    return "Hello, my name is #{name}."
+
 end
+
+#
 
 def batch_badge_creator (attendees)
-    list = []
+
+    thisBatch =[]
+
     attendees.each do |name|
-         list.push("Hello, my name is #{name}.")
+
+        thisBatch << "Hello, my name is #{name}."
+
     end
-    list
+    return thisBatch
 end
+
+#
 
 def assign_rooms(attendees)
-    list = []
-    i = 0
-    attendees.each do |name |
-        i += 1
-        list.push("Hello, #{name}! You'll be assigned to room #{i}!")
+
+    roomAssignment = []
+
+    attendees.each_with_index do |name, i|
+
+        roomAssignment << "Hello, #{name}! You'll be assigned to room #{i + 1}!"
     end
-    list
+    return roomAssignment
 end
 
+#
+
 def printer(attendees)
-    bbc = batch_badge_creator(attendees)
-    ar = assign_rooms(attendees)
-    bbc.each do |text|
-        puts text
-    end
-    ar.each do |text|
-        puts text
+
+    nameList = batch_badge_creator(attendees)
+    clientInfo = assign_rooms(attendees)
+
+    #--------
+
+    nameList.each do |string|
+
+        puts string
     end
 
+    #--------
+
+    clientInfo.each do |string|
+
+        puts string
+
+    end
 end
