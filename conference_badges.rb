@@ -33,5 +33,6 @@ def printer(array_of_names)
 
   print_rooms.each do |room|
     puts room
+  end
 
 end
