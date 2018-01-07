@@ -24,7 +24,7 @@ end
 
 def printer(conference_badges)
 
-  batch_badge_creator(array_of_names).each do |badge|
+  batch_badge_creator(conference_badges).each do |badge|
     puts badge
   end
 
