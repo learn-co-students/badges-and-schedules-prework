@@ -9,7 +9,7 @@ def batch_badge_creator(array_of_names)
     printed_badges << badge_maker(name)
   end
 
-  return badges
+  return printed_badges
 end
 
 def assign_rooms()
