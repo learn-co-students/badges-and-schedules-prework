@@ -14,6 +14,6 @@ end
 
 def assign_rooms(conference_badges)
   assigned_rooms = []
-
+  num = 1
   conference_badges.each do |name|
-    assigned_rooms << "Hello, ${name} You'll be assigned to room _____!"
+    assigned_rooms << "Hello, #{name} You'll be assigned to room #{num}!"
