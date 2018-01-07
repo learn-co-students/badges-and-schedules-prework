@@ -9,5 +9,5 @@ def batch_badge_creator(array)
     new_array << badge_maker(name)
   end
 
-  new_array
+  return new_array
 end
