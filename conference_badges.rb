@@ -15,7 +15,7 @@ end
 def assign_rooms(attendees)
   assigned_rooms = []
 
-  conference_badges.each_with_idex do |name, index|
+  attendees.each_with_idex do |name, index|
     assigned_rooms << "Hello, #{name} You'll be assigned to room #{index + 1}!"
   end
 
