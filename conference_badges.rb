@@ -12,7 +12,7 @@ def batch_badge_creator(array_of_names)
   return printed_badges
 end
 
-def assign_rooms(array_of_names)
+def assign_rooms(conference_badges)
   assigned_rooms = []
 
   array_of_names.each_with_idex do |name, index|
