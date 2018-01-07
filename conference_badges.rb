@@ -22,4 +22,4 @@ def assign_rooms(array_of_names)
   return assigned_rooms
 end
 
-def printer()
+def printer(array_of_names)
