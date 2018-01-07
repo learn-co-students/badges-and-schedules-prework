@@ -2,7 +2,7 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(array)
+def batch_badge_creator(array_of_names)
   new_array = []
 
   array.each do |name|
@@ -12,7 +12,7 @@ def batch_badge_creator(array)
   return new_array
 end
 
-def assign_rooms(conference_badges)
+def assign_rooms()
   assigned_rooms = []
 
   conference_badges.each_with_idex do |name, index|
