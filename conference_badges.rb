@@ -20,4 +20,5 @@ def assign_rooms(conference_badges)
     assigned_rooms << "Hello, #{name} You'll be assigned to room #{num}!"
     num += 1
   end
+  return assigned_rooms
 end
