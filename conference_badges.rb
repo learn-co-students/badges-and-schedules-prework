@@ -32,5 +32,3 @@ def printer(array_of_names)
     puts room
   end
 end
-
-printer(attendees)
