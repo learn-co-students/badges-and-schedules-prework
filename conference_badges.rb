@@ -11,3 +11,5 @@ def batch_badge_creator(array)
 
   return new_array
 end
+
+def conference_badges 
