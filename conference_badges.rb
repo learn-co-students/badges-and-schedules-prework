@@ -31,3 +31,4 @@ def printer(array_of_names)
   array_of_names.each do |name|
     puts assign_rooms(name)
   end
+end
