@@ -33,4 +33,4 @@ def printer(conference_badges)
   end
 end
 
-printer(conference_badges)
+printer(attendees)
