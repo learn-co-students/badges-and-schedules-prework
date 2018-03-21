@@ -35,4 +35,4 @@ def printer(array)
     puts array1[index]
     puts array2[index]
   end
-  end
+end
