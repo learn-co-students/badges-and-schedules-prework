@@ -18,6 +18,8 @@ def assign_rooms(names)
   i = 0
   names.each do |name|
     room_num.push("Hello, #{name}! You'll be assigned to room #{i+1}!")
+    # or room_num.push("Hello, #{names[i]}! You'll be assigned to room #{i+1}!")
+    #without the |name| parameter
     i += 1
   end
   room_num
