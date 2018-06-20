@@ -7,7 +7,7 @@ end
 def batch_badge_creator(array)
   badge_messages = []
  array.collect do |x|
-  badge_messages.push(badge_maker(x))
+  badge_messages<<(badge_maker(x))
 end
 return badge_messages
 end
@@ -16,7 +16,7 @@ end
 def assign_rooms(list)
   assignments = []
   list.each_with_index { |item, index|
-    assignments.push("Hello, #{item}! You'll be assigned to room #{index + 1}!")
+    assignments<<("Hello, #{item}! You'll be assigned to room #{index + 1}!")
   }
   assignments
 end
