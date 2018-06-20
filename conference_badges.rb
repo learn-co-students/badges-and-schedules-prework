@@ -5,14 +5,13 @@ return "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(array)
-badge_messages = []
-  i = 0
-  while i < array.length do
-    badge_messages.push(badge_maker(array[i]))
-    i+= 1
-  end
-  badge_messages
+  badge_messages = []
+ array.collect do |x|
+  badge_messages.push(badge_maker(x))
 end
+return badge_messages
+end
+
 
 def assign_rooms(list)
   assignments = []
