@@ -20,7 +20,7 @@ end
 
 
 
-def printer
+def printer(array_of_names)
   puts "#{batch_badge_creator(array_of_names)}"
   puts "#{assign_rooms(array_of_names)}"
 end 
