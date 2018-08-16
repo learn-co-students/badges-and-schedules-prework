@@ -8,4 +8,5 @@ require_relative '../conference_badges'
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # config options here
+  
 end
