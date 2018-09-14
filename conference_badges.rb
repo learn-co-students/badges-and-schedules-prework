@@ -39,3 +39,17 @@ def printer(array)
 batch_badge_creator(array).each { |x| puts x }
 assign_rooms(array).each { |x| puts x }
 end
+
+# figured out printer by searching: how to print each item in an array ruby
+# and then finding this article: https://stackoverflow.com/questions/310634/what-is-the-right-way-to-iterate-through-an-array-in-ruby
+# which states: This will iterate through all the elements:
+# array = [1, 2, 3, 4, 5, 6]
+# array.each { |x| puts x }
+# Prints:
+#
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
