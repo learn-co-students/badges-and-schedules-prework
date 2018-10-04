@@ -51,6 +51,15 @@ Hello, Matz! You'll be assigned to room 7!
 TEXT
 }
 
+
+
+# ==============================================================
+
+
+
+
+
+
   describe '#badge_maker' do
 
     # Question 1
