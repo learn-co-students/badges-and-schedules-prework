@@ -14,20 +14,16 @@ def batch_badge_creator(speakers)
   return badge_messages
 end
 
-#rooms = [1, 2, 3, 4, 5, 6, 7]
-#room_assignments = "Hello, #{name}! You'll be assigned to room #{room}!"
 
 def assign_rooms(speakers)
-  #rooms = [1, 2, 3, 4, 5, 6, 7]
-  #rooms = []
+  rooms = []
   #room_assignments = "Hello, #{name}! You'll be assigned to room #{room}!"
   speakers.each_with_index do |name, room|
-    room = 1
-    room_assignments = "Hello, #{name}! You'll be assigned to room #{room}!"
-    room_assignments << name << room
     room += 1
+    room_assignments = "Hello, #{name}! You'll be assigned to room #{room}!"
+    rooms << room_assignments
   end
-  return room_assignments
+  return rooms
 end
 
 def printer(speakers)
