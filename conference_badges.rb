@@ -45,7 +45,9 @@ def printer(speakers)
   #    puts message
   #end
 
-  attendees = assign_rooms(speakers).collect do |x|
+  assign_rooms(speakers).collect do |x|
     puts x
   end
 end
+
+printer(speakers)
