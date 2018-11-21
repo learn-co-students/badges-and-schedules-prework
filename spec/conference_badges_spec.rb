@@ -1,4 +1,27 @@
 require 'spec_helper'
+  end
+
+  describe '#batch_badge_creator' do
+
+    # Question 2b
+
+    it 'should return a list of badge messages' do
+      expect(batch_badge_creator(attendees)).to eq(badges)
+    end
+
+  end
+
+  describe '#assign_rooms' do
+
+    # Question 3
+
+    it 'should return a list of welcome messages and room assignments' do
+      expect(assign_rooms(attendees)).to eq(room_assignments)
+    end
+
+  end
+
+  describe '#printer' do
 
 describe 'conference_badges' do
 
@@ -59,29 +82,6 @@ TEXT
       expect(badge_maker(name)).to eq("Hello, my name is #{name}.")
     end
 
-  end
-
-  describe '#batch_badge_creator' do
-
-    # Question 2b
-
-    it 'should return a list of badge messages' do
-      expect(batch_badge_creator(attendees)).to eq(badges)
-    end
-
-  end
-
-  describe '#assign_rooms' do
-
-    # Question 3
-
-    it 'should return a list of welcome messages and room assignments' do
-      expect(assign_rooms(attendees)).to eq(room_assignments)
-    end
-
-  end
-
-  describe '#printer' do
 
     # Question 4
     # The method `printer` should output first the results of the batch_badge_creator method and then of the assign_rooms method to the screen - this way you can output
@@ -101,5 +101,5 @@ TEXT
     end
 
   end
-
 end
+
