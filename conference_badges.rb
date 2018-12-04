@@ -31,4 +31,9 @@ def assign_rooms2(array)
   return rooms
 end
 
+def printer(array)
+  batch_badge_creator(array).each_index { |index| puts batch_badge_creator(array)[index] }
+  assign_rooms(array).each_index { |index| puts assign_rooms(array)[index] }
+end
+
   
