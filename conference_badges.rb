@@ -15,16 +15,10 @@ def batch_badge_creator(attendees)
  end
 end
 
-                            "Hello, Edsger! You'll be assigned to room 1!",
-                            "Hello, Ada! You'll be assigned to room 2!",
-                            "Hello, Charles! You'll be assigned to room 3!",
-                            "Hello, Alan! You'll be assigned to room 4!",
-                            "Hello, Grace! You'll be assigned to room 5!",
-                            "Hello, Linus! You'll be assigned to room 6!",
-                            "Hello, Matz! You'll be assigned to room 7!"
 
 def assign_rooms(attendees)
-  attendees.each_with_index do | attendees, room |#insert attendee name into "Hello, _____!"
+  # attendees = item, room = index
+  attendees.each_with_index do | attendees, room | 
   puts "Hello, #{attendees}! You'll be assigned to room #{room + 1}"
   end
 end
