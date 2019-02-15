@@ -24,7 +24,7 @@ end
                             "Hello, Matz! You'll be assigned to room 7!"
 
 def assign_rooms(attendees)
-  attendees.map do 
+  #insert attendee name into "Hello, _____"
 end
 
 def printer
