@@ -1,10 +1,14 @@
 # Write your code here.
 
-def batch_badge_creator(name)
-  for i in 1...x
-  puts "Hello, my name is #{name[i]}."
+attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+name = "Arel"
 
-  end
+def badge_maker(name)
+  "Hello, my name is #{name}."
+end
+
+def batch_badge_creator(attendees)
+  
 end
 
 
@@ -12,4 +16,5 @@ def assign_rooms
 end
 
 def printer
+  batch_badge_creator()
 end
