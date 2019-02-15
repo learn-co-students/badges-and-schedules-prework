@@ -17,6 +17,7 @@ end
 
 
 def assign_rooms(attendees)
+ # create new loop outside (not inside) the each loop or it will reset the value of newArray othe
  newArray = []
   # attendees = item, room = index
   attendees.each_with_index do | attendees, room | 
