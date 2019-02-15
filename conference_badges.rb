@@ -2,7 +2,7 @@
 
 attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 name = "Arel"
-rooms = [1..7]
+
 
 def badge_maker(name)
   "Hello, my name is #{name}."
@@ -24,7 +24,14 @@ end
                             "Hello, Matz! You'll be assigned to room 7!"
 
 def assign_rooms(attendees)
-  #insert attendee name into "Hello, _____"
+  #insert attendee name into "Hello, _____!"
+  
+  #insert room number into "You'll be assigned to room ___" (pass room array in as an arg?)
+  
+  for counter in 1..7 do
+  #puts "You'll be assigned to room #{counter}."
+  end
+  #print personalized string 
 end
 
 def printer
